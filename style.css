@@ -43,7 +43,7 @@ header img.logo{
     justify-content: center;
     align-items: center;
     height: 2.5rem;
-    flex-basis: 30rem;
+    flex-basis: 70rem;
     border: none;
     background-color: #ffffff;
     padding: 0;
@@ -139,12 +139,14 @@ span button{
     color: #ececed;
     padding: .3rem;
     margin-left: 24rem;
+    margin-right: 1rem;
 }
 
 .nav_links li a{
     color: #ececed;
     font-size: .8rem;
     width: 5rem;
+    text-decoration: none;
 }
 
 .nav_links li a{
@@ -238,6 +240,54 @@ span button{
     color: #1f71c3;
 }
 
+/*--------main: hero slider for DESKTOP version--------------*/
+#slider {
+    overflow: hidden;
+  }
+  /* the overflow is clipped, and the rest of the content is hidden. Hidden so it stays within the page*/
+  
+  #slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite;
+  }
+  
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+  
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
 
 
 /*--------------------------------------------*/
