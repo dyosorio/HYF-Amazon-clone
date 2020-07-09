@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #bdbfc5;
+    background-color: 	#eaeded;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -240,7 +240,11 @@ span button{
     color: #1f71c3;
 }
 
-/*--------main: hero slider for DESKTOP version--------------*/
+/*-------main hero slider: ***DESKTOP****----------*/
+main{
+    position: relative;
+}
+
 #slider {
     overflow: hidden;
   }
@@ -289,8 +293,93 @@ span button{
     }
   }
 
+/*-------products gallery: ***DESKTOP****----------*/
 
-/*--------------------------------------------*/
+#grid-wrap{
+    position: absolute;
+    top: 32vh;
+    padding: .5%
+}
+
+#grid-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  }
+
+  #grid-flex .grid-item {
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+    box-sizing: border-box;
+    background: #fff;
+    justify-content: space-around;
+    width: 24%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 1%;
+    height: 60vh;
+    overflow: hidden;
+  }
+
+  #grid-flex li img{
+      width: 90%;
+  }
+
+  #grid-flex li h2{
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: .4rem;
+    line-height: .8rem;
+    font-size: 1.2rem;
+    padding-bottom: 0;
+    font-weight: bold;
+    text-align: left;
+    width: 90%;
+}
+
+#grid-flex li p{
+    color: #1f71c3;
+    font-weight: bold;
+    font-size: .8rem;
+    padding-top: .5rem;
+    text-align: left;
+    width: 90%;
+}
+
+#grid-flex .sign-in-text{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    height: 8vh;
+    margin-bottom: 0;
+}
+
+#grid-flex .sign-in-container{
+    /*border: solid 1px yellowgreen;*/
+    height: 6vh;
+    width: 90%;
+    margin-top: -20vh;
+}
+
+#grid-flex .sign-in-button{
+    background: linear-gradient(to bottom, #f9e8bc 0%, #f1c350 100%);
+    border: solid 1px #b59542;
+    border-radius: 4px;
+    padding: 0 10vh 0 11vh;
+    text-align: center;
+    font-size: .8;
+    line-height: 29px;
+    width: 100%;
+
+}
+
+/*---------------------****TABLETS*****-----------------------*/
 
 @media only screen and (max-width: 420px){
     body{
