@@ -32,10 +32,19 @@ header{
     color: #ffffff;
 }
 
+.fa-bars:hover{
+    border: solid 1px #fff;
+}
+
 header img.logo{
-    width: 6rem;
+    width: 10rem;
     align-items: center;
     margin: .5rem;
+    padding: 2.4vh;
+    padding-right: 8vh;
+}
+header img.logo:hover{
+    border: solid 1px #fff;
 }
 
 .search-box {
@@ -75,9 +84,14 @@ span button{
     margin-left: 4rem;
     background: #f3f3f3;
     border-right: solid .3px #999999;
-    border-radius: 10% 0% 0% 10%;
+    border-radius: 4px 0 0 4px;
     box-sizing: border-box;
     font-size: .8rem;
+    cursor: pointer;
+}
+.all-button:hover{
+    color: #101010;
+    background: #dadada;
 }
 
 .search-button{
@@ -87,9 +101,12 @@ span button{
     color: #ffffff;
     min-width: 3.4rem;
     height: 2.5rem;
-    border-radius: 0% 10% 10% 0%;
+    border-radius: 0 4px 4px 0;
     background: #febd69;
     margin-right: 1rem;
+}
+.search-button:hover{
+    background-color: #FF9900;
 }
 
 .fa-search{
@@ -119,6 +136,9 @@ span button{
     padding: .4rem;
     margin-left: 6rem;
 }
+.nav_link1:hover{
+    border: solid 1px #fff;
+}
 
 .nav_link2{
     list-style: none;
@@ -131,6 +151,9 @@ span button{
     padding: .4rem;
     margin-left: 16rem;
 }
+.nav_link2:hover{
+    border: solid 1px #fff;
+}
 
 .fa-shopping-cart{
     font-size: 2rem;
@@ -140,6 +163,10 @@ span button{
     padding: .3rem;
     margin-left: 24rem;
     margin-right: 1rem;
+}
+.fa-shopping-cart:hover{
+    border: solid 1px #fff;
+    color: #FF9900;
 }
 
 .nav_links li a{
@@ -192,6 +219,9 @@ span button{
     position: absolute;
     margin: .5rem;
 }
+.icon-text:hover{
+    border: solid 1px #fff;
+}
 
 .second-nav ul li{
     list-style: none;
@@ -203,13 +233,22 @@ span button{
 .nav2-general1{
     left: 15rem;
 }
+.nav2-general1:hover{
+    border: solid 1px #fff;
+}
 
 .nav2-general2{
     left: 21rem;
 }
+.nav2-general2:hover{
+    border: solid 1px #fff;
+}
 
 .nav2-general3{
     left: 29rem;
+}
+.nav2-general3:hover{
+    border: solid 1px #fff;
 }
 
 .nav2-message{
@@ -220,6 +259,9 @@ span button{
     left: 62rem;
     font-weight: bold;
     /*border: solid 1px #999999;*/
+}
+.nav2-message:hover{
+    border: solid 1px #fff;
 }
 
 .third-container{
@@ -238,6 +280,11 @@ span button{
 
 .learn-more{
     color: #1f71c3;
+    text-decoration: none;
+}
+.learn-more:hover{
+    color: #c65b29;
+    text-decoration: underline;
 }
 
 /*-------main hero slider: ***DESKTOP****----------*/
@@ -248,8 +295,7 @@ main{
 #slider {
     overflow: hidden;
   }
-  /* the overflow is clipped, and the rest of the content is hidden. Hidden so it stays within the page*/
-  
+
   #slider figure {
     position: relative;
     width: 500%;
@@ -293,7 +339,7 @@ main{
     }
   }
 
-/*-------products gallery: ***DESKTOP****----------*/
+/*-------product gallery: ***DESKTOP****----------*/
 
 #grid-wrap{
     position: absolute;
@@ -353,8 +399,18 @@ main{
     width: 90%;
 }
 
+.grid-item p a{
+    color: #1f71c3;
+    text-decoration: none;
+}
+
+.grid-item p a:hover{
+    color: #c65b29;
+    text-decoration: underline;
+}
+
 #grid-flex .sign-in-text{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.8rem;
     height: 8vh;
     margin-bottom: 0;
@@ -367,17 +423,195 @@ main{
     margin-top: -20vh;
 }
 
-#grid-flex .sign-in-button{
+.sign-in-container .sign-in-button{
     background: linear-gradient(to bottom, #f9e8bc 0%, #f1c350 100%);
     border: solid 1px #b59542;
     border-radius: 4px;
     padding: 0 10vh 0 11vh;
     text-align: center;
     font-size: .8;
-    line-height: 29px;
+    line-height: 5vh;
     width: 100%;
-
+    cursor: pointer;
 }
+
+.sign-in-container .sign-in-button:hover{
+    background: linear-gradient(to bottom, 	#f4d47c 0%, #eeba34 100%);
+}
+
+/*-------feed carousel: ***DESKTOP****----------*/
+
+.carousel-heading{
+    text-align: left;
+    position: relative;
+    top: 80vh;
+    margin-left: 2vh;
+    padding-left: 2vh;
+    z-index: 1;
+    font-size: 1.2em;
+}
+
+.carousel-heading a{
+    font-size: .7em;
+    padding-left: 4vh;
+    color: #1f71c3;
+    text-decoration: none;
+}
+
+.carousel-heading a:hover{
+    color: #c65b29;
+    text-decoration: underline;
+}
+
+.carousel{
+     background: #fff;
+     top: 72vh;
+     height: 50vh;
+     padding: 2vh;
+     padding-top:7vh;
+     margin: 2vh;
+     position: absolute;
+}
+
+.carousel-cell{
+    width: 20%;
+    height: 40vh;
+    margin-right: 2vh;
+    background: #fff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------feed carousel: Second ***DESKTOP****----------*/
+.carousel-heading2{
+    text-align: left;
+    position: relative;
+    top: 80vh;
+    margin-left: 2vh;
+    padding-left: 2vh;
+    z-index: 1;
+    font-size: 1.2em;
+    color: #272727;
+}
+
+.carousel-heading2 a{
+    font-size: .7em;
+    padding-left: 4vh;
+    color: #1f71c3;
+    text-decoration: none;
+}
+
+.carousel-heading2 a:hover{
+    color: #c65b29;
+    text-decoration: underline;
+}
+
+.carousel2{
+     background: #fff;
+     top: 72vh;
+     height: 50vh;
+     padding: 2vh;
+     padding-top:7vh;
+     margin: 2vh;
+     position: absolute;
+}
+
+.carousel-cell2{
+    width: 35%;
+    height: 40vh;
+    margin-right: 3vh;
+    background: #fff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------feed carousel: Second ***DESKTOP****----------*/
+
+.carousel-heading3{
+    text-align: left;
+    position: relative;
+    top: 85vh;
+    width: 98%;
+    margin-left: 2vh;
+    z-index: 1;
+    font-size: 1.2em;
+    text-align: center;
+    color: #272727;
+    padding-top:1vh;
+    padding-bottom: 3vh;
+    border-top: solid 1px #dadada;
+}
+
+.carousel-heading3 a{
+    font-size: .7em;
+    padding-left: 4vh;
+    color: #1f71c3;
+    text-decoration: none;
+}
+
+.carousel-heading3 a:hover{
+    color: #c65b29;
+    text-decoration: underline;
+}
+
+.sign-in-container2{
+    height: 6vh;
+    width: 100%;
+    top: 85vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.sign-in-container2 .sign-in-button2{
+    background: linear-gradient(to bottom, #f9e8bc 0%, #eeba34  100%);
+    border: solid 1px #b59542;
+    border-radius: 4px;
+    padding: 0 10vh 0 11vh;
+    text-align: center;
+    font-size: .8;
+    line-height: 5vh;
+    width: 25%;
+    cursor: pointer;
+}
+.sign-in-container2 .sign-in-button2:hover{
+    background: linear-gradient(to bottom, 	#f4d47c 0%, #eeba34 100%);
+}
+
+.carousel3{
+     background: #fff;
+     top: 62vh;
+     height: 65vh;
+     padding: 2vh;
+     padding-top:22vh;
+     margin: 2vh;
+     position: absolute;
+}
+
+.carousel-cell3{
+    width: 20%;
+    height: 40vh;
+
+    margin-right: 3vh;
+    margin-top: 1vh;
+    background: #fff;
+    border-radius: 5px;
+    counter-increment: carousel-cell;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+  
+
 
 /*---------------------****TABLETS*****-----------------------*/
 
