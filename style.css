@@ -374,7 +374,6 @@ main{
   }
 
   #grid-flex .grid-item .img-container{
-    border: solid 2px red;
     overflow: hidden;
     width: 85%;
     height: auto;
@@ -428,7 +427,6 @@ main{
 }
 
 #grid-flex .sign-in-container{
-    /*border: solid 1px yellowgreen;*/
     height: 6vh;
     width: 90%;
     margin-top: -20vh;
@@ -452,12 +450,21 @@ main{
 
 /*-------feed carousel: ***DESKTOP****----------*/
 
+#carousel-container{
+    position: absolute;
+    top: 150vh;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
 .carousel-heading{
     text-align: left;
     position: relative;
-    top: 80vh;
+    top: 8vh;
     margin-left: 2vh;
     padding-left: 2vh;
+    padding-bottom: 1vh;
     z-index: 1;
     font-size: 1.2em;
 }
@@ -476,13 +483,12 @@ main{
 
 .carousel{
      background: #fff;
-     top: 75vh;
+     top: 0vh;
      height: 45vh;
      padding: 2vh;
      padding-top:2vh;
      margin: 2vh;
-    
-     border: solid 1px blue;
+    position: relative;
 }
 
 .carousel-cell{
@@ -501,9 +507,10 @@ main{
 .carousel-heading2{
     text-align: left;
     position: relative;
-    top: 80vh;
+    top: 8vh;
     margin-left: 2vh;
     padding-left: 2vh;
+    padding-bottom: 1vh;
     z-index: 1;
     font-size: 1.2em;
     color: #272727;
@@ -523,16 +530,15 @@ main{
 
 .carousel2{
      background: #fff;
-     top: 72vh;
      height: 45vh;
      padding: 2vh;
      padding-top:2vh;
      margin: 2vh;
-     position: absolute;
+     position: relative;
 }
 
 .carousel-cell2{
-    width: 35%;
+    width: 30%;
     height: 40vh;
     margin-right: 3vh;
     background: #fff;
@@ -545,19 +551,27 @@ main{
 
 /*-------feed carousel: Third ***DESKTOP****----------*/
 
+#carousel3-container{
+    position: absolute;
+    width: 100%;
+    margin-top: 2vh;
+    padding: 0;
+}
+
 .carousel-heading3{
     text-align: left;
     position: relative;
-    top: 85vh;
+    margin-top: 4vh;
     width: 98%;
     margin-left: 2vh;
+    margin-right: 2vh;
     z-index: 1;
     font-size: 1.2em;
     text-align: center;
-    color: #272727;
+    color: #464646;
+    background-color: #fff;
     padding-top:3vh;
     padding-bottom: 2vh;
-    border-top: solid 1px #dadada;
 }
 
 .carousel-heading3 a{
@@ -575,12 +589,15 @@ main{
 .sign-in-container2{
     height: 6vh;
     width: 100%;
-    top: 85vh;
     position: relative;
     z-index: 2;
     display: flex;
     align-self: center;
     justify-content: center;
+    background-color: #fff;
+    width: 98%;
+    margin-left: 2vh;
+    margin-right: 2vh;
 }
 
 .sign-in-container2 .sign-in-button2{
@@ -589,7 +606,7 @@ main{
     border-radius: 4px;
     padding: 0 10vh 0 11vh;
     text-align: center;
-    font-size: .8;
+    font-size: 1em;
     line-height: 5vh;
     width: 25%;
     cursor: pointer;
@@ -600,16 +617,17 @@ main{
 
 .carousel3{
      background: #fff;
-     top: 62vh;
-     height: 65vh;
+     height: 45vh;
      padding: 2vh;
-     padding-top:22vh;
+     top: -2vh;
+     padding-top:0;
+     margin-top: 0;
      margin: 2vh;
-     position: absolute;
+     position: relative;
 }
 
 .carousel-cell3{
-    width: 15%;
+    width: 20%;
     height: 40vh;
     margin-right: 3vh;
     margin-top: 3vh;
@@ -620,8 +638,6 @@ main{
     align-items: center;
     justify-content: flex-start;
 }
-
-  
 
 
 /*---------------------****TABLETS*****-----------------------*/
