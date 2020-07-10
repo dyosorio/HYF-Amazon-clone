@@ -6,9 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="https.//use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <title>Amazon-clone: Online Shopping</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
+
+    <!-------header and nav bar--------->
+
     <header>
         <div id="content">
             <span class="slide">
@@ -19,7 +25,7 @@
         </div>
 
         <div>
-            <img class="logo" src="images/logo.png" alt="logo">
+            <a href="#"><img id="home-logo" class="logo" src="images/logo.png" alt="logo"></a>
         </div>
         
         <span><button class="all-button">All</button></span>
@@ -50,10 +56,11 @@
             </ul>
         </nav>
     </section>
+<!-------main hero slider--------->
 
     <section class="third-container">
         <P>
-            We are delivering to your region with limited shipping options. Please expect extended delivery time. <span class="learn-more">Learn more.</span>
+            We are delivering to your region with limited shipping options. Please expect extended delivery time. <a href="#" class="learn-more">Learn more.</a>
         </P>
     </section>
     <main>
@@ -67,49 +74,108 @@
             </figure>
         </div>
 
+    <!-------product gallery------------>
+
         <section id="grid-wrap">
             <ul id="grid-flex">
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-1.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-2.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-3.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2 class="sign-in-text">Sign in for the best experience</h2>
-                    <div class="sign-in-container"><button class="sign-in-button">Sign in securely</button></div>
+                    <div class="sign-in-container">
+                        <button class="sign-in-button" id="submit">Sign in securely</button>
+                    </div>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-5.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-6.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-7.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
                 <li class="grid-item">
                     <h2>Product</h2>
                     <img src="images/product-8.jpg">
-                    <p>Shop now</p>
+                    <p><a href="#">Shop now</a></p>
                 </li>
             </ul>
         </section>
+<!-------Feed carousel - First-------->
+        <h3 class="carousel-heading">Discover Amazon<a href=#>Click to learn more</a></h3>
+        <div class="carousel" data-flickity>
+            <div class="carousel-cell"><img src="images/carouselA1.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA2.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA3.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA4.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA5.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA1.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA2.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA3.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA4.jpg"></div>
+            <div class="carousel-cell"><img src="images/carouselA5.jpg"></div>
+        </div>
+
+        <!-------Feed carousel - Second-------->
+
+        <h3 class="carousel-heading2">Electronics<a href=#>see more</a></h3>
+        <div class="carousel2" data-flickity>
+            <div class="carousel-cell2"><img src="images/carouselB1.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB2.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB3.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB4.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB5.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB6.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB1.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB2.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB3.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB4.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB5.jpg"></div>
+            <div class="carousel-cell2"><img src="images/carouselB6.jpg"></div>
+        </div>
+
+        <!-------Feed carousel - Third-------->
+        <h3 class="carousel-heading3">Book ideas inspired by your shopping history</h3>
+        <div class="sign-in-container2">
+            <button class="sign-in-button2" id="submit2">Sign in to personalized</button>
+        </div>
+        <div class="carousel3" data-flickity>
+            <div class="carousel-cell3"><img src="images/carouselC1.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC2.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC3.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC4.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC5.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC6.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC1.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC2.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC3.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC4.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC5.jpg"></div>
+            <div class="carousel-cell3"><img src="images/carouselC6.jpg"></div>
+        </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html> 
