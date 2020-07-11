@@ -144,7 +144,6 @@ span button{
     display: inline;
     position: absolute;
     word-wrap: break-word;
-    /*border: solid 1px #999999;*/
     height: 3rem;
     width: 6rem;
     padding: .4rem;
@@ -257,7 +256,6 @@ span button{
     margin: .5rem;
     left: 62rem;
     font-weight: bold;
-    /*border: solid 1px #999999;*/
 }
 .nav2-message:hover{
     border: solid 1px #fff;
@@ -792,12 +790,335 @@ main{
     color: #c65b29;
 }
 
-/*---------------------****CELLPHONES*****-----------------------*/
-/*---------------------****CELLPHONES*****-----------------------*/
+/*---------MOBILE-------****MOBILE*****-------MOBILE----------------*/
+/*---------MOBILE-------****MOBILE*****-------MOBILE-------------*/
 
 @media only screen and (max-width: 450px) {
-    body {
-      background-color: pink;
+
+    header{
+        display: flex;
+        flex-wrap: wrap;/****/
+        flex-direction: row; /***/
+        background-color: #24303e;/*****/
+        height: 6rem;/*****/
+        border-bottom: solid 2px #4c5762;/******/
+    }
+
+
+    .fa-bars {
+        border: none; /****/
+    }
+
+    .fa-bars:hover{
+        border: none; /****/
+    }
+    
+    header img.logo{
+        width: 5rem;/****/
+        padding: .5vh;/****/
+        margin-right: 4vh; /***/
+    }
+
+    header img.logo:hover{
+        border: none;/****/
+    }
+    
+    
+    .search-box {
+        display: flex;/****/
+        height: 3rem;/***/
+        flex-basis: 100%;/****/
+    }
+    
+    input:focus{
+        outline: none;
+    }
+    
+    .all-button{
+        display: none;
+    }
+
+    .search-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        min-width: 3.4rem;
+        height: 2.5rem;
+        border-radius: 0 4px 4px 0;
+        background: #febd69;
+        margin-right: 1rem;
+    }
+    
+    .fa-search{
+        color: #272727;
+        font-size: 1em;
+    }
+    
+    .nav-bar{
+        display: none;
+    }
+    
+    
+    .nav_link1{
+        display: none;
+    }
+    
+    .nav_link2{
+        display:  none;
+    }
+    
+    .fa-cart-arrow-down{
+        display: none; /*I couldn't changed order of this item on display layout*/
+    }
+
+    .nav_links li a{
+        display: none;
+    }
+    
+    .nav_links li a{
+        color: #ececed;
+        font-size: .8rem;
+        width: 5rem;
+    }
+
+    .second-nav-container{
+        height: 8vh;/*****/
+        background-color: #37485a;
+    }
+    
+    .second-nav{
+        flex-wrap: wrap;
+        flex-direction: row;
+        display: flex;    
+        overflow: hidden;
+        overflow-x: auto;
+        height: 6vh;/****/
+        margin-bottom: 4vh;
+        background-color: #37485a;/****/
+        top: 0;/**/
+    }
+
+    .second-nav ul li a{
+        color:#fff;
+        margin-left: 0;
+    }
+
+    .second-nav ul li a:hover{
+        border: none;
+    }
+
+
+
+    .second-nav ul li{
+        margin-left: 0;
+    }
+
+    .second-nav ul .icon-text{
+        margin-right: 2vh;
+    }
+
+    .fa-map-marker-alt{
+        color: #ececed;
+        margin-left: .5rem;
+        font-size: 2rem;
+        padding: .2rem;
+        height: 2.8rem;
+        width: 6rem;
+    }
+    
+    .icon-text{
+        list-style: none;
+        display: inline;
+        position: absolute;
+        margin: .5rem;
+    }
+    .icon-text:hover{
+        border: solid 1px #fff;
+    }
+
+    .second-nav .nav2-message{
+        display: none;
+    }
+    /***************checkpoint****************/
+    .third-container{
+        display: none;
+    }
+    
+    .third-container p{
+        font-size: .8rem;
+        padding: 1rem;
+        text-align: left;
+        text-indent: .5rem;
+        font-weight: bold;
+        font-weight: bold;
+    }
+    
+    main{
+        position: relative;
+    }
+    
+    #slider {
+        overflow: hidden;
+        top: 20vh;
+      }
+    
+      #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 25s slider infinite;
+      }
+    
+    #grid-wrap{
+        position: absolute;
+        top: 14vh;/*****/
+        padding: 0;
+    }
+    
+    #grid-flex {
+        padding: 0;
+        margin: 0;/*****/
+      }
+    
+      #grid-flex .grid-item {
+        width: 100%;/*******/
+        height: 30vh;/***-----------------**/
+      }
+
+      #grid-flex .grid-item:nth-child(1),
+      #grid-flex .grid-item:nth-child(2),
+      #grid-flex .grid-item:nth-child(3),
+      #grid-flex .grid-item:nth-child(5),
+      #grid-flex .grid-item:nth-child(6),
+      #grid-flex .grid-item:nth-child(7),
+      #grid-flex .grid-item:nth-child(8)
+        {
+            display: none;
+        }
+    
+      #grid-flex li h2{
+        margin-top: 2vh;/*********/
+
+    }
+
+    #grid-flex .sign-in-container{
+        margin-top: -10vh;
+    }
+
+    .item-sign-in{
+        height: calc(100% - 20px)
+    }
+    
+    #carousel-container{
+        top: 40vh;
+    }
+  
+    .carousel-cell{
+        width: 100%;/****/
+    }
+
+    .carousel-cell2{
+        width: 100%;
+    }
+    
+    #carousel3-container{
+        width: 100%;
+    }
+    
+    .carousel-heading3{
+        margin-top: 1vh;/***/
+        width: calc(100% - 4vh);
+        margin-left: 2vh;
+        margin-right: 2vh;
+        font-size: 1.2em;
+        padding: 2vh;
+    }
+    
+    .sign-in-container2{
+        height: 6vh;
+        width: 100%;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        background-color: #fff;
+        width: calc(100% - 4vh);
+        margin-left: 2vh;
+        margin-right: 2vh;
+    }
+    
+    .sign-in-container2 .sign-in-button2{
+        line-height: 2vh;/****/
+        width: 80%;/***/
+    }
+
+    .carousel3{
+         background: #fff;
+         height: 50vh;
+         padding: 2vh;
+         top: -2vh;
+         padding-top:0;
+         margin-top: 0;
+         margin: 2vh;
+         position: relative;
+    }
+    
+    .carousel-cell3{
+        width: 100%;
+    }
+    
+    #footer {
+        height: 60vh;/******/
+        top: 300vh;
+    }
+    
+    .footer-general-info{
+        height: 30vh;/*****/
+        padding: 1vh 2vh 1vh 2vh;/******/
+    }
+    
+    .footer-general-info ul{
+        width: 50%;/****/
+        padding: 6vh 4vh 4vh 4vh;/******/
+    }
+
+    .footer-general3, .footer-general4{
+        display: none;
+    }
+    
+    .footer-general-info ul li{
+        font-size: .5em;/*****/
+    }
+
+    .footer-container .footer-ribbon{
+        background-color: #0d141e;/****/
+    }
+    
+    .footer-container .footer-ribbon .logo{
+        display: none;
+    }
+    
+    .footer-container .ribbon-list{
+        width: 90%;/***/
+    }
+    
+    .footer-ribbon-info a{
+        margin-right: .4rem;/****/
+        margin-left: .4rem;/*****/
+        padding: .2rem;/*****/
+        font-size: .8em;/****/
+        border: none;/****/
+    }
+    
+    .footer-bottom{
+        display: none;
+    }
+
+    .media a{
+        font-size: 1.6rem;/******/
     }
   }
 
